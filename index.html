@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            div.box{
+                width: 200px;
+                height: 200px;
+                background-color: red;
+                margin:100px auto;/*top/bottom  left/right*/
+                animation-name: abc;
+                animation-duration: 1s;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+            }
+            @keyframes abc{
+                0%{
+
+                    transform:rotateZ(0deg);
+                }
+                100%{
+                    transform:rotateZ(360deg);
+                }
+            }
+            .box2{
+                width: 200px;
+                height: 200px;
+                background-color:blue;
+                margin:100px auto;/*top/bottom  left/right*/
+                animation-name: abc2;
+                animation-duration: 2s;
+                animation-timing-function: ease-out;
+                animation-iteration-count: 1;
+            }
+            @keyframes abc2{
+                0%{
+
+                    transform:rotateZ(0deg);
+                }
+                100%{
+                    transform:rotateZ(360deg);
+                }
+            }
+            .box3{
+                width: 200px;
+                height: 200px;
+                background-color: rgb(174, 219, 10);
+                margin:100px auto;/*top/bottom  left/right*/
+                animation-name: abc3;
+                animation-duration: 1s;
+                animation-timing-function: ease-in;
+                animation-iteration-count: 1;
+            }
+            @keyframes abc3{
+                0%{
+
+                    transform:translatex(0px);
+                }
+                100%{
+                    transform:translatex(360px);
+                }
+            }
+            .box4{
+                width: 200px;
+                height: 200px;
+                background-color: rgb(212, 50, 164);
+                margin:100px auto;/*top/bottom  left/right*/
+                animation-name: abc4;
+                animation-duration: 1s;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+            }
+            @keyframes abc4{
+                0%{
+
+                    transform:translatex(0px);
+                    
+                }
+                25%{
+                    background-color: blueviolet;
+                }
+                50%{
+                    background-color: brown;
+                }
+                100%{
+                    transform:translatex(360px);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">Animation</div>
+        <div class="box2">Animation</div>
+        <div class="box3">Animation</div>
+        <div class="box4">Animation</div>
+        
+
+    </body>
+</html>
